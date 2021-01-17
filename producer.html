@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sunny Fruit | Съни Фрут</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+            
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                
+                <ul id="nav-lists">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="producer.html">Производители</a></li>
+                    <li><a href="fruits.html">Плодове</a></li>
+                    <li><a href="vegetables.html">Зеленчуци</a></li>
+                    <li><a href="contact-us.html">Контакти</a></li>
+                </ul>
+            
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>Производители</h1>
+
+            <span>
+            <p>Sunny Fruit работи в сътрудничество с производители в цяла Европа и особено в Гърция, като подбора е фокусиран върху процеса на отглеждането и събирането на реколтата.
+            </br>С цел да осигури необходимата свежа продукция, с постоянно качество и стабилни количества през цялата година, са направени споразумения с производители от различни региони на Европа.
+            </br>На първо място са качеството и навременната доставка , като винаги се съобразяваме с нуждите и предпочитанията на всеки отделен клиент. 
+            </br>Не са заложени минимални количества за доставка и не добавяме такса за транспорт.
+            </br>Поради факта, че изкупуваме директно от производителите по-голямата част от стоката, с която работим, разполагаме с всички съпровождащи я документи – фактури, санитарни разрешителни и др.</p>
+            </span>
+            <div class="four">
+                <div class="fourimg"><img src="images/prod-1.png" alt="" /></div>
+                <div class="fourimg"><img src="images/prod-2.png" alt="" /></div>
+                <div class="fourimg"><img src="images/prod-3.png" alt="" /></div>
+                <div class="fourimg"><img src="images/prod-4.png" alt="" /></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2021 Sunny Fruit. All rights reserved. | Всички права запазени © 2021 Sunny Fruit. </p>
+        </div>
+    </footer>
+
+<script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+</script>
+</body>
+</html>

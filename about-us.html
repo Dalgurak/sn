@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sunny Fruit | Съни Фрут</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="navbar">
+            
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+                
+                <ul id="nav-lists">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about-us.html">За Нас</a></li>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Плодове</a></li>
+                    <li><a href="#">Зеленчуци</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>ЗА НАС</h1>
+            <p>Sunny Fruit е създадена през 2006 г., с основен предмет на дейност, внос и търговия с плодове и зеленчуци на едро.</p>
+            <p>Предлага алтернативни варианти на внос от различни географски ширини, като така поддръжа наличност от пресни и свежи продукти цялогодишно.</p> 
+            
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2021 Sunny Fruit. All rights reserved. | Всички права запазени © 2021 Sunny Fruit. </p>
+        </div>
+    </footer>
+
+<script>
+    var navList = document.getElementById("nav-lists");
+    function Show() {
+    navList.classList.add("_Menus-show");
+    }
+
+    function Hide(){
+    navList.classList.remove("_Menus-show");
+    }
+</script>
+</body>
+</html>
